@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/sachinxfdo/flask-k8s-app.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
